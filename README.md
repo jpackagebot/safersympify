@@ -10,9 +10,10 @@ See SymPy PR12524 for more details: https://github.com/sympy/sympy/pull/12524
 
 ## Examples
 
-```python
-
-    Create a SymPy expression from user input (This uses pure Python syntax. Whitelisted operators and functions only are allowed.):
+```
+    Create a SymPy expression from user input. 
+    This uses pure Python syntax. 
+    Whitelisted operators and functions only are allowed.
     >>> expr = SaferSympify().str2sympy('-sqrt(1 + a**b*b)/((a**b)*b+1)')
     >>> expr
     -1/sqrt(a**b*b + 1)
@@ -32,13 +33,5 @@ See SymPy PR12524 for more details: https://github.com/sympy/sympy/pull/12524
     Pretty-print expression as Latex (could be displayed in browser with MathJax)
     >>> sympy.latex(expr)
     '- \\frac{1}{\\sqrt{a^{b} b + 1}}'
-
-    Pretty-print in terminal
-    >>> sympy.pprint(expr, use_unicode_sqrt_char=True)
-         -1      
-    ─────────────
-       __________
-      ╱  b       
-    ╲╱  a ⋅b + 1 
 
 ```

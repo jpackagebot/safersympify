@@ -5,7 +5,7 @@ with open("README.md", "rb") as fh:
 
 setuptools.setup(
     name="safersympify",
-    version="0.1.0",
+    version="0.1.11",
     author="John Dory",
     author_email="packagebot@gmail.com",
     description="Safer way to sympify unsanitized input",

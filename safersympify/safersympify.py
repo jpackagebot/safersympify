@@ -99,7 +99,7 @@ class SaferSympify:
         return sympy.Symbol(node.id)
 
     def _number(self, node):
-        return node.n
+        return sympy.Number(node.n)
 
     def _unary_op(self, node):
         operator_type = type(node.op)
